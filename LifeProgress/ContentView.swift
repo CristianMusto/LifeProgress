@@ -19,7 +19,6 @@ struct ContentView: View {
                     colors: [
                         Color(GeneralUtils.secondaryColor),
                         Color(GeneralUtils.primaryColor),
-                        Color(GeneralUtils.primaryColor),
                         Color(GeneralUtils.contrastColor)
                     ],
                     startPoint: startAnimation ? .topLeading : .bottomLeading,
