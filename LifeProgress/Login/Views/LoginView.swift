@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct LoginView: View {
     var body: some View {
         ZStack {
             Color.black
@@ -18,5 +18,5 @@ struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView()
+    LoginView()
 }

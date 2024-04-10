@@ -27,6 +27,7 @@
 		72A954192BAC55E2006F1684 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 72A954182BAC55E2006F1684 /* FirebaseRemoteConfig */; };
 		72A9541B2BAC55E2006F1684 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 72A9541A2BAC55E2006F1684 /* FirebaseStorage */; };
 		72A9541D2BAC5B8B006F1684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72A9541C2BAC5B8B006F1684 /* GoogleService-Info.plist */; };
+		72CE355C2BC713A50010F1BA /* GeneralUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE355B2BC713A50010F1BA /* GeneralUtils.swift */; };
 		72FC9A242BBE924500099F84 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC9A232BBE924500099F84 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		72A953F22BAC5586006F1684 /* LifeProgressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgressUITests.swift; sourceTree = "<group>"; };
 		72A953F42BAC5586006F1684 /* LifeProgressUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgressUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		72A9541C2BAC5B8B006F1684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72CE355B2BC713A50010F1BA /* GeneralUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUtils.swift; sourceTree = "<group>"; };
 		72FC9A232BBE924500099F84 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 		72A953D62BAC5586006F1684 /* LifeProgress */ = {
 			isa = PBXGroup;
 			children = (
+				72CE355A2BC713920010F1BA /* Utils */,
 				72A953D72BAC5586006F1684 /* LifeProgressApp.swift */,
 				72A953D92BAC5586006F1684 /* ContentView.swift */,
 				72FC9A252BBE93A500099F84 /* Login */,
@@ -155,6 +158,14 @@
 				72A953F42BAC5586006F1684 /* LifeProgressUITestsLaunchTests.swift */,
 			);
 			path = LifeProgressUITests;
+			sourceTree = "<group>";
+		};
+		72CE355A2BC713920010F1BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				72CE355B2BC713A50010F1BA /* GeneralUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		72FC9A252BBE93A500099F84 /* Login */ = {
@@ -353,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CE355C2BC713A50010F1BA /* GeneralUtils.swift in Sources */,
 				72A953DA2BAC5586006F1684 /* ContentView.swift in Sources */,
 				72A953D82BAC5586006F1684 /* LifeProgressApp.swift in Sources */,
 				72FC9A242BBE924500099F84 /* LoginView.swift in Sources */,
