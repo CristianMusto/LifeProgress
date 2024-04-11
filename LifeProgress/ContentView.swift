@@ -26,7 +26,7 @@ struct ContentView: View {
                 )
                 // Animation to toggle the gradient colors
                 .onAppear {
-                    withAnimation(.linear(duration: 5.5)) {
+                    withAnimation(.easeInOut(duration: 5.5)) {
                         startAnimation.toggle()
                     }
                 }

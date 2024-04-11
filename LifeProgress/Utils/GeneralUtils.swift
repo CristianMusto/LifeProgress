@@ -9,7 +9,7 @@ import Foundation
 
 struct GeneralUtils {
     // String
-    static let appName = "Life progress"
+    static let appName = "Life Progress"
     static let welcomeSubtitle = "Life is easy when you start progressing in it."
     
     // Colors
