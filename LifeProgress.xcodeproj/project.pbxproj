@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72413E3C2BC7FAF100ACC887 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72413E3B2BC7FAF100ACC887 /* RegistrationView.swift */; };
 		72A953D82BAC5586006F1684 /* LifeProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A953D72BAC5586006F1684 /* LifeProgressApp.swift */; };
 		72A953DA2BAC5586006F1684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A953D92BAC5586006F1684 /* ContentView.swift */; };
 		72A953DC2BAC5586006F1684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A953DB2BAC5586006F1684 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72413E3B2BC7FAF100ACC887 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		72A953D42BAC5586006F1684 /* LifeProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A953D72BAC5586006F1684 /* LifeProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgressApp.swift; sourceTree = "<group>"; };
 		72A953D92BAC5586006F1684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72413E392BC7FAD700ACC887 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				72413E3A2BC7FAE100ACC887 /* Views */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		72413E3A2BC7FAE100ACC887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72413E3B2BC7FAF100ACC887 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		72A953CB2BAC5586006F1684 = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +142,11 @@
 		72A953D62BAC5586006F1684 /* LifeProgress */ = {
 			isa = PBXGroup;
 			children = (
-				72CE355A2BC713920010F1BA /* Utils */,
 				72A953D72BAC5586006F1684 /* LifeProgressApp.swift */,
 				72A953D92BAC5586006F1684 /* ContentView.swift */,
 				72FC9A252BBE93A500099F84 /* Login */,
+				72413E392BC7FAD700ACC887 /* Registration */,
+				72CE355A2BC713920010F1BA /* Utils */,
 				72A953DB2BAC5586006F1684 /* Assets.xcassets */,
 				72A9541C2BAC5B8B006F1684 /* GoogleService-Info.plist */,
 				72A953DD2BAC5586006F1684 /* Preview Content */,
@@ -364,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72413E3C2BC7FAF100ACC887 /* RegistrationView.swift in Sources */,
 				72CE355C2BC713A50010F1BA /* GeneralUtils.swift in Sources */,
 				72A953DA2BAC5586006F1684 /* ContentView.swift in Sources */,
 				72A953D82BAC5586006F1684 /* LifeProgressApp.swift in Sources */,

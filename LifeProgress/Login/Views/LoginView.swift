@@ -26,7 +26,7 @@ struct LoginView: View {
             )
             // Animation to toggle the gradient colors
             .onAppear {
-                withAnimation(.easeInOut(duration: 5.5)) {
+                withAnimation(.easeInOut(duration: 2.75)) {
                     startAnimation.toggle()
                 }
             }
