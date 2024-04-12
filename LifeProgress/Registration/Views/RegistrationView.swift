@@ -52,7 +52,7 @@ struct RegistrationView: View {
                         .padding(.bottom, 5)
                         .foregroundStyle(Color(GeneralUtils.accentColor))
                     
-                    Text("Enter your email and password to log in.")
+                    Text("Enter your email and password to sign in.")
                         .font(.subheadline)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)

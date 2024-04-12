@@ -75,7 +75,7 @@ struct ContentView: View {
                         .padding(.all, 2.5)
                         
                         
-                        NavigationLink(destination: LoginView()) {
+                        NavigationLink(destination: RegistrationView()) {
                             Text("Sign In")
                                 .font(.headline)
                                 .fontWeight(.heavy)
@@ -89,12 +89,17 @@ struct ContentView: View {
                         .cornerRadius(100)
                         .padding(.all, 2.5)
                         
+                        
+                        
                     }
                     .padding()
                     
                 }
             }
         }
+        .accentColor(Color(GeneralUtils.accentColor))
+        .navigationViewStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Navigation View Style@*/DefaultNavigationViewStyle()/*@END_MENU_TOKEN@*/)
+        
     }
 }
 
