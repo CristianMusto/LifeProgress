@@ -29,6 +29,8 @@
 		72A9541B2BAC55E2006F1684 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 72A9541A2BAC55E2006F1684 /* FirebaseStorage */; };
 		72A9541D2BAC5B8B006F1684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72A9541C2BAC5B8B006F1684 /* GoogleService-Info.plist */; };
 		72CE355C2BC713A50010F1BA /* GeneralUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE355B2BC713A50010F1BA /* GeneralUtils.swift */; };
+		72D66E032BC94AA900BB97B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D66E022BC94AA900BB97B0 /* User.swift */; };
+		72D66E062BC98CF100BB97B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D66E052BC98CF100BB97B0 /* HomeView.swift */; };
 		72FC9A242BBE924500099F84 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC9A232BBE924500099F84 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		72A953F42BAC5586006F1684 /* LifeProgressUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgressUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		72A9541C2BAC5B8B006F1684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72CE355B2BC713A50010F1BA /* GeneralUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUtils.swift; sourceTree = "<group>"; };
+		72D66E022BC94AA900BB97B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		72D66E052BC98CF100BB97B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72FC9A232BBE924500099F84 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,20 +107,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72413E392BC7FAD700ACC887 /* Registration */ = {
+		72413E3F2BC9498300ACC887 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				72413E3A2BC7FAE100ACC887 /* Views */,
+				72D66E022BC94AA900BB97B0 /* User.swift */,
 			);
-			path = Registration;
+			path = User;
 			sourceTree = "<group>";
 		};
-		72413E3A2BC7FAE100ACC887 /* Views */ = {
+		72413E402BC949C300ACC887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72413E412BC949DC00ACC887 /* Main */,
+				72D66E012BC94A6E00BB97B0 /* User */,
+				72413E422BC949E400ACC887 /* Login */,
+				72413E432BC949F300ACC887 /* Registration */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72413E412BC949DC00ACC887 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72A953D92BAC5586006F1684 /* ContentView.swift */,
+				72D66E052BC98CF100BB97B0 /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		72413E422BC949E400ACC887 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				72FC9A232BBE924500099F84 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		72413E432BC949F300ACC887 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
 				72413E3B2BC7FAF100ACC887 /* RegistrationView.swift */,
 			);
-			path = Views;
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		72A953CB2BAC5586006F1684 = {
@@ -143,9 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				72A953D72BAC5586006F1684 /* LifeProgressApp.swift */,
-				72A953D92BAC5586006F1684 /* ContentView.swift */,
-				72FC9A252BBE93A500099F84 /* Login */,
-				72413E392BC7FAD700ACC887 /* Registration */,
+				72413E402BC949C300ACC887 /* Views */,
+				72D66DFE2BC94A3900BB97B0 /* Models */,
 				72CE355A2BC713920010F1BA /* Utils */,
 				72A953DB2BAC5586006F1684 /* Assets.xcassets */,
 				72A9541C2BAC5B8B006F1684 /* GoogleService-Info.plist */,
@@ -187,52 +218,35 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		72FC9A252BBE93A500099F84 /* Login */ = {
+		72D66DFE2BC94A3900BB97B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				72FC9A282BBE93E300099F84 /* Actions */,
-				72FC9A272BBE93B800099F84 /* Models */,
-				72FC9A292BBE93F100099F84 /* Screens */,
-				72FC9A262BBE93AE00099F84 /* Views */,
-				72FC9A2A2BBE93FF00099F84 /* ViewModels */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		72FC9A262BBE93AE00099F84 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				72FC9A232BBE924500099F84 /* LoginView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		72FC9A272BBE93B800099F84 /* Models */ = {
-			isa = PBXGroup;
-			children = (
+				72413E3F2BC9498300ACC887 /* User */,
+				72D66DFF2BC94A4500BB97B0 /* Login */,
+				72D66E002BC94A4B00BB97B0 /* Registration */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		72FC9A282BBE93E300099F84 /* Actions */ = {
+		72D66DFF2BC94A4500BB97B0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Actions;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		72FC9A292BBE93F100099F84 /* Screens */ = {
+		72D66E002BC94A4B00BB97B0 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Screens;
+			path = Registration;
 			sourceTree = "<group>";
 		};
-		72FC9A2A2BBE93FF00099F84 /* ViewModels */ = {
+		72D66E012BC94A6E00BB97B0 /* User */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +398,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				72413E3C2BC7FAF100ACC887 /* RegistrationView.swift in Sources */,
+				72D66E062BC98CF100BB97B0 /* HomeView.swift in Sources */,
 				72CE355C2BC713A50010F1BA /* GeneralUtils.swift in Sources */,
+				72D66E032BC94AA900BB97B0 /* User.swift in Sources */,
 				72A953DA2BAC5586006F1684 /* ContentView.swift in Sources */,
 				72A953D82BAC5586006F1684 /* LifeProgressApp.swift in Sources */,
 				72FC9A242BBE924500099F84 /* LoginView.swift in Sources */,
